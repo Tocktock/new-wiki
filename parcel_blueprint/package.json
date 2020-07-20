@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.5",
     "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.5.1",
     "typescript": "^3.9.7"
   },
   "dependencies": {
