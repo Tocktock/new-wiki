@@ -1,7 +1,17 @@
 import React, {useState, useEffect} from "react";
 
 const useWS = () => {
-
+    const SocketTest = () => {
+      let payload = {
+          Type: "for-test",
+          Jwt: "empty",
+          Data: "none"
+      };
+      if(ws instanceof WebSocket) {
+        console.log(payload)
+         ws!.send(JSON.stringify(payload))
+      }
+    }
     // ws : websocket, rs : readyState
     const [ws, setWs] = useState<WebSocket|null>(null);
     const [rs, setRs] = useState<number>(0);
@@ -22,17 +32,17 @@ const useWS = () => {
             if(rs !== ws.readyState){
                 setRs(ws.readyState)
             }
+            heartbeat(ws);
         },1000);
     }
     
 
     useEffect(() => {
-        console.log("test");
-		if(ws === null) { console.log("configure start"); setWs(new WebSocket('wss://127.0.0.1:1200',["master"]));   }
+        if(ws === null) { console.log("configure start"); setWs(new WebSocket('ws://127.0.0.1:1200/api/'));}
 		if(ws !== null && rs === 0 ) { console.log("heartbeat start"); configureWebsocket(); heartbeat(ws); }		
     },[ws, rs]);
     
-    return {
+    return {SocketTest,
         ws, setWs
     }
 }

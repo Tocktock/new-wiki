@@ -7,18 +7,20 @@ import Center from './Components/Center';
 import RightSide from './Components/RightSide';
 import Footer from './Components/Footer';
 import useWS from './Hooks/useWS';
+
 import "./assets/main.css"
-import 'regenerator-runtime/runtime'
+import 'regenerator-runtime/runtime' // to avoid async ans await error
+
 interface Props {
   message? : string
   user? : string
 }
-
 const App:React.FC<Props> = (props) => {
   const ws = useWS();
 
   return (
     <>
+    <button onClick={ws.SocketTest}>  SocketTest</button>
     <Navbar/> 
     <Search/>
     <LeftSide/>
