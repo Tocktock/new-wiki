@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-
 	"github.com/gin-gonic/contrib/static"
 	"github.com/gin-gonic/gin"
 )
@@ -25,5 +24,5 @@ func main() {
 	}
 
 	// Start and run the server
-	router.Run(":3000")
+	router.Run(":8080")
 }
