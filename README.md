@@ -5,6 +5,6 @@
     user who have permission to write data, should be professional or have authority.
 
 # Stack
-## React, TailwindCSS
-## Go gin with gorillaWebsocket, MongoDB, Postgresql(not confirm) 
-## Nginx
+    React, TailwindCSS
+    Go gin with gorillaWebsocket, MongoDB, Postgresql(not confirm) 
+    Nginx
