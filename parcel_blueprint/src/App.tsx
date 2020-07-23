@@ -20,9 +20,7 @@ const App:React.FC<Props> = (props) => {
 
   return (
     <>
-    <button onClick={ws.SocketTest}>  SocketTest</button>
     <Navbar/> 
-    <Search/>
     <LeftSide/>
     <Center/>
     <RightSide/>

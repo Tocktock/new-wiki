@@ -1,8 +1,7 @@
-import React from "react"
+import React from "react";
 
-const Footer:React.FC = (props) => {
-    
-    return (<h1>this is Footer</h1>);
-}
+const LeftSide: React.FC = (props) => {
+  return <h1>this is LeftSide</h1>;
+};
 
-export default Footer;
+export default LeftSide;
