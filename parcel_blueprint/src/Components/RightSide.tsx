@@ -1,8 +1,7 @@
-import React from "react"
+import React from "react";
 
-const RightSide:React.FC = (props) => {
-    
-    return (<h1>this is RightSide</h1>);
-}
+const RightSide: React.FC = (props) => {
+  return <div className="w-1/4 h-100vh bg-indigo-300">This is Right</div>;
+};
 
 export default RightSide;

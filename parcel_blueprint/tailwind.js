@@ -153,6 +153,8 @@ module.exports = {
       "48": "12rem",
       "56": "14rem",
       "64": "16rem",
+      "100vh": "100vh",
+      "100vw": "100vw",
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundOpacity: (theme) => theme("opacity"),
