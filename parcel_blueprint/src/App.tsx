@@ -20,7 +20,7 @@ const App: React.FC<Props> = (props) => {
 
   return (
     <>
-      <div className="max-w-screen-xl m-auto">
+      <div className="max-w-screen-xl mx-auto mb-10">
         <Navbar />
       </div>
       <div className="content flex h-auto max-w-screen-xl m-auto">

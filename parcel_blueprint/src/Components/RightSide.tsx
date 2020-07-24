@@ -3,8 +3,8 @@ import ListTable from "./RightSide/ListTable";
 import SearchTable from "./RightSide/SearchTable";
 const RightSide: React.FC = (props) => {
   return (
-    <div className="w-1/4">
-      <div className="stickyTable sticky top-0">
+    <div className="w-3/12">
+      <div className="sticky top-0">
         <ListTable />
         <SearchTable />
       </div>

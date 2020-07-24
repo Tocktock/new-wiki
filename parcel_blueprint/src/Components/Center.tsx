@@ -6,7 +6,7 @@ import Tail from "./Center/Tail";
 const Center: React.FC = (props) => {
   const [docName, setDocName] = useState<String | null>(null);
   return (
-    <div className="w-1/2 h-full bg-red-300">
+    <div className="w-7/12 bg-red-300">
       <Head />
       <Body />
       <Tail />
