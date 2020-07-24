@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Head from "./Center/Head";
+import Body from "./Center/Body";
+import Tail from "./Center/Tail";
 
 const Center: React.FC = (props) => {
-  return <div className="w-1/2 h-100vh bg-red-300">This is Center</div>;
+  const [docName, setDocName] = useState<String | null>(null);
+  return (
+    <div className="w-1/2 h-full bg-red-300">
+      <Head />
+      <Body />
+      <Tail />
+    </div>
+  );
 };
 
 export default Center;

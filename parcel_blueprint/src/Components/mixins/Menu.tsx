@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Menu: React.FC<Props> = (props) => {
-  return <div className="menu m-5 text-white">{props.menuName}</div>;
+  return <div className="menu m-5">{props.menuName}</div>;
 };
 
 export default Menu;

@@ -20,8 +20,10 @@ const App: React.FC<Props> = (props) => {
 
   return (
     <>
-      <Navbar />
-      <div className="content flex">
+      <div className="max-w-screen-xl m-auto">
+        <Navbar />
+      </div>
+      <div className="content flex h-auto max-w-screen-xl m-auto">
         <LeftSide />
         <Center />
         <RightSide />

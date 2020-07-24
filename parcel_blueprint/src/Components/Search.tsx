@@ -7,7 +7,7 @@ const Search: React.FC = (props) => {
       action=""
       method="get"
     >
-      <input className="pl-2 mr-2 w-1/2" type="text" />
+      <input className="pl-2 mr-2 w-1/2 rounded" type="text" />
       <button className="btn__search text-white border-solid border-2">
         <i className="fas fa-search"></i>
       </button>

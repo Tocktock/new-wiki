@@ -298,6 +298,17 @@ module.exports = {
     inset: {
       "0": "0",
       auto: "auto",
+      "50%": "50%",
+      "1": ".25rem",
+      "2": ".5rem",
+      "3": ".75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "7": "1.75rem",
+      "8": "2rem",
+      "9": "2.25rem",
+      "10": "2.5rem",
     },
     letterSpacing: {
       tighter: "-0.05em",
