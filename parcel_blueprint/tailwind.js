@@ -265,6 +265,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      crimsonText: ['"Crimson Pro"', "serif"],
     },
     fontSize: {
       xs: "0.75rem",

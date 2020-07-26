@@ -6,6 +6,7 @@ import LeftSide from "./Components/LeftSide";
 import Center from "./Components/Center";
 import RightSide from "./Components/RightSide";
 import Footer from "./Components/Footer";
+import MainPage from "./Components/MainPage";
 import useWS from "./Hooks/useWS";
 
 import "./assets/main.css";
@@ -17,10 +18,12 @@ interface Props {
 }
 const App: React.FC<Props> = (props) => {
   const ws = useWS();
-
+  const mainState = useState<boolean>(true);
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mb-10">
+      {mainState && <MainPage />}
+
+      {/* <div className="max-w-screen-xl mx-auto mb-10">
         <Navbar />
       </div>
       <div className="content flex h-auto max-w-screen-xl m-auto">
@@ -28,7 +31,7 @@ const App: React.FC<Props> = (props) => {
         <Center />
         <RightSide />
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
