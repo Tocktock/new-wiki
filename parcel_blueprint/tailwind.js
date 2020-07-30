@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.tsx"],
   target: "relaxed",
   prefix: "",
   important: false,
@@ -299,6 +299,9 @@ module.exports = {
     inset: {
       "0": "0",
       auto: "auto",
+      "8%": "8%",
+      "9%": "9%",
+      "100%": "100%",
       "50%": "50%",
       "1": ".25rem",
       "2": ".5rem",
@@ -310,6 +313,7 @@ module.exports = {
       "8": "2rem",
       "9": "2.25rem",
       "10": "2.5rem",
+      "5px": "5px",
     },
     letterSpacing: {
       tighter: "-0.05em",

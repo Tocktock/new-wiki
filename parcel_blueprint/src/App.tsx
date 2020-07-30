@@ -18,9 +18,11 @@ interface Props {
 }
 const App: React.FC<Props> = (props) => {
   const ws = useWS();
-  const mainState = useState<boolean>(true);
+  const [mainState, setMainState] = useState<boolean>(true);
+  const [login, setLogin] = useState<boolean>(false);
   return (
     <>
+      <Navbar mainState={mainState} login={login} />
       {mainState && <MainPage />}
 
       {/* <div className="max-w-screen-xl mx-auto mb-10">
